@@ -2,24 +2,18 @@
 
 Objectif : Réaliser une petite application Laravel permettant l'accès à quatre endpoints GET, un endpoint POST et un endpoint DELETE, qui pourront être testés depuis Postman.
 
-## About Laravel
+[Voir les instructions complètes](documentation/Instructions_test.pdf).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## A propos
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Afin de faciliter la mise en place du projet, il n'y aura qu'une seule branche `master` qui contiendra le code final.
+De plus, il n'y aura pas de PR, les commits seront directement poussés sur la branche `master`.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation
 
-## Learning Laravel
+* Cloner le projet
+* Créer un fichier `.env` à partir du fichier `.env.example`
+* Installer les dépendances avec `composer install`
+* Créer la base de données avec `php artisan migrate`
+* Lancer le serveur avec `php artisan serve`
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
