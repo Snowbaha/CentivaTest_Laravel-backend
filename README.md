@@ -15,5 +15,12 @@ De plus, il n'y aura pas de PR, les commits seront directement poussés sur la b
 * Créer un fichier `.env` à partir du fichier `.env.example`
 * Installer les dépendances avec `composer install`
 * Créer la base de données avec `php artisan migrate`
+    * refresh avec fixtures `php artisan migrate:fresh --seed`
 * Lancer le serveur avec `php artisan serve`
 
+## Mon apprentissage et mon approche
+
+Je suis développeur web et j'utilise Symfony depuis sa version 2.3. J'ai donc décidé de relever le défi de ce test avec Laravel pour découvrir ce framework.
+
+J'ai commencé par écouter les vidéos de la formation [Laracast section 4](https://laracasts.com/series/laravel-8-from-scratch/episodes/17) pour comprendre le
+fonctionnement de la BDD et commencer sa conception. 
