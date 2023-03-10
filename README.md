@@ -24,3 +24,15 @@ Je suis développeur web et j'utilise Symfony depuis sa version 2.3. J'ai donc d
 
 J'ai commencé par écouter les vidéos de la formation [Laracast section 4](https://laracasts.com/series/laravel-8-from-scratch/episodes/17) pour comprendre le
 fonctionnement de la BDD et commencer sa conception. 
+
+J'ai ensuite lu une ressource sur la création d'API avec Laravel : [laravel.sillo.org](https://laravel.sillo.org/cours-laravel-10-les-donnees-les-ressources-dapi-2/).
+afin de m'aider à créer les endpoints.
+Génération de la "base" avec `artisan make:controller Api/UserController --api`
+
+Pour la partie : [SoftDelete](https://laravel.com/docs/10.x/eloquent#soft-deleting).
+
+
+## Améliorations possibles
+
+* Ajouter des tests
+* Recherche par slug au lieu des ID sur les endpoints

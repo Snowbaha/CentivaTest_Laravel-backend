@@ -18,7 +18,7 @@ class TeamFactory extends Factory
     {
         return [
             'name' => fake()->word(),
-            'slug' => fake()->unique()->slug(),
+            'slug' => fake()->unique()->slug(2),
         ];
     }
 }
