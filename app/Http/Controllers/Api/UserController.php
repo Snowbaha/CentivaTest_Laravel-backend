@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\UserResource;
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Collection;
@@ -22,10 +23,11 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(User $user): User
+    public function show(User $user): UserResource
     {
-        return $user;
+        return new UserResource($user);
     }
+
 
 
 

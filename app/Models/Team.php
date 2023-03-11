@@ -20,6 +20,8 @@ class Team extends Model
         'slug',
     ];
 
+    protected $hidden = ['created_at', 'deleted_at'];
+
     public function users()
     {
         return $this->hasMany(User::class);
