@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('password')->nullable(); // dans notre cas, pas besoin d'authentification
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

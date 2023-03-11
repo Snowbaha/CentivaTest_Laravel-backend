@@ -29,7 +29,7 @@ J'ai ensuite lu une ressource sur la création d'API avec Laravel : [laravel.sil
 afin de m'aider à créer les endpoints.
 Génération de la "base" avec `artisan make:controller Api/UserController --api`
 
-Pour la partie : [SoftDelete](https://laravel.com/docs/10.x/eloquent#soft-deleting).
+Pour la partie : [SoftDelete](https://laravel.com/docs/10.x/eloquent#soft-deleting) en cascade avec [exemple ici](https://medium.com/@c.nwaugha/delete-a-laravel-model-with-its-relations-88db34b495dd).
 
 
 ## Améliorations possibles

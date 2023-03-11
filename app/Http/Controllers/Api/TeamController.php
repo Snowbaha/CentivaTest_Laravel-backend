@@ -27,4 +27,12 @@ class TeamController extends Controller
     }
 
 
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Team $team): void
+    {
+        $team->delete();
+    }
 }
