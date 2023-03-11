@@ -18,6 +18,11 @@ De plus, il n'y aura pas de PR, les commits seront directement poussés sur la b
     * refresh avec fixtures `php artisan migrate:fresh --seed`
 * Lancer le serveur avec `php artisan serve`
 
+## Endpoints Postman
+
+Vous pouvez voir l'ensemble des endpoits avec l'export Postman [ici](documentation/postman_collection.json).
+
+
 ## Mon apprentissage et mon approche
 
 Je suis développeur web et j'utilise Symfony depuis sa version 2.3. J'ai donc décidé de relever le défi de ce test avec Laravel pour découvrir ce framework.
