@@ -27,6 +27,14 @@ class TeamController extends Controller
         return new TeamResource($team);
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request): void
+    {
+
+        Team::create($request->all());
+    }
 
 
     /**

@@ -36,3 +36,4 @@ Pour la partie : [SoftDelete](https://laravel.com/docs/10.x/eloquent#soft-deleti
 
 * Ajouter des tests
 * Recherche par slug au lieu des ID sur les endpoints
+* Sur les POSTs, vérifier que c'est slug ou email unique pour éviter l'erreur 500
