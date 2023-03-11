@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Events\UserCreated;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
 use App\Models\Team;
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -33,7 +35,9 @@ class UserController extends Controller
      */
     public function store(Request $request): void
     {
-        User::create($request->all());
+        $user = User::create($request->all());
+
+        event(new UserCreated($user));
     }
 
 

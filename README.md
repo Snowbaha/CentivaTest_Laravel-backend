@@ -18,9 +18,11 @@ De plus, il n'y aura pas de PR, les commits seront directement poussés sur la b
     * refresh avec fixtures `php artisan migrate:fresh --seed`
 * Lancer le serveur avec `php artisan serve`
 
-## Endpoints Postman
+## Validation des objectifs
 
-Vous pouvez voir l'ensemble des endpoits avec l'export Postman [ici](documentation/postman_collection.json).
+* Vous pouvez voir l'ensemble des endpoints avec l'export Postman [ici](documentation/postman_collection.json).
+* Utilisation de "Mailables" et "Events" pour envoyer un email de confirmation lors de la création d'un utilisateur.
+* 
 
 
 ## Mon apprentissage et mon approche
@@ -36,6 +38,7 @@ Génération de la "base" avec `artisan make:controller Api/UserController --api
 
 Pour la partie : [SoftDelete](https://laravel.com/docs/10.x/eloquent#soft-deleting) en cascade avec [exemple ici](https://medium.com/@c.nwaugha/delete-a-laravel-model-with-its-relations-88db34b495dd).
 
+Pour les évènements : [Laravel Events](https://laravel.com/docs/10.x/events) et [Laravel Mailables](https://laravel.com/docs/10.x/mail).
 
 ## Améliorations possibles
 
