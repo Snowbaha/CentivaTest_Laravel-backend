@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Observers\TeamSlugObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -35,5 +36,7 @@ class Team extends Model
                 $user->delete(); // <-- direct deletion
             });
         });
+
+        static::observe(TeamSlugObserver::class);
     }
 }
