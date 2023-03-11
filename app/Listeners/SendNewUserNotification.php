@@ -23,8 +23,8 @@ class SendNewUserNotification
      */
     public function handle(UserCreated $event): void
     {
-        // Envoyer notification à l'utilisateur
-        $event->user->notify(new NewUserNotification());;
+        // Envoyer notification à l'utilisateur avec un délai
+        $event->user->notify((new NewUserNotification())->delay(now()->addSeconds(25)));
 
     }
 }

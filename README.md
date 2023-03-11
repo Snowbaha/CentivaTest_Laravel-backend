@@ -21,7 +21,7 @@ De plus, il n'y aura pas de PR, les commits seront directement poussés sur la b
 ## Validation des objectifs
 
 * Vous pouvez voir l'ensemble des endpoints avec l'export Postman [ici](documentation/postman_collection.json).
-* Utilisation de "Mailables" et "Events" pour envoyer un email de confirmation lors de la création d'un utilisateur.
+* Utilisation de "Mailables", "Queue" et "Events" pour envoyer un email de confirmation lors de la création d'un utilisateur avec un délai.
 * Utilisation de "Observer" pour générer un slug unique de Team si déjà existant.
 
 
@@ -45,3 +45,4 @@ Pour les évènements : [Laravel Events](https://laravel.com/docs/10.x/events) e
 * Ajouter des tests
 * Recherche par slug au lieu des ID sur les endpoints
 * Sur les POSTs, vérifier que c'est un email unique pour éviter l'erreur 500
+* Nettoyer le code avec PHP-CS-Fixer
